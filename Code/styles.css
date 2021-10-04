@@ -1,0 +1,179 @@
+/*==================== ESTILOS GENERALES ====================*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'inter', sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --Negro: #000;
+  --Blanco: #fff;
+  --Gris-01: #345b63;
+  --Azul-01: #00A19D;
+  --Glass: rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 35px;
+}
+
+.reverse {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.bookmark-black {
+  fill: #000;
+}
+
+button {
+  border: none;
+}
+
+/*============ HEADER ==============*/
+header {
+  background: url("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+}
+
+.header-top {
+  padding-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5%;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: clamp(10%, 300px, 14%);
+}
+
+.icons > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  margin-right: 3%;
+}
+
+.Logo {
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--Blanco);
+  text-shadow: 0.5px 0.9px 0.2px rgba(0, 0, 0, 0.253);
+}
+
+#logo-icon-yellowS {
+  margin: 0 3%;
+  width: clamp(10%, 100px, 30%);
+}
+
+.bars {
+  width: clamp(10%, 300px, 14%);
+  height: minmax(10px, 30px);
+}
+
+.bars > #menu-icon {
+  width: 20%;
+  height: clamp(1%, 20px, 2%);
+  float: right;
+}
+
+.header-center {
+  margin: 3% 0 13% 15%;
+}
+
+.header-center > h2 {
+  line-height: 60px;
+}
+
+.header-center > h3 {
+  letter-spacing: 4px;
+  font-weight: 200;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.438);
+}
+
+.header-nav {
+  padding: 3% 6%;
+  background-color: rgba(0, 0, 0, 0.247);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-title {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-categories > button {
+  width: 180px;
+  height: 160px;
+  border-radius: 20%;
+  margin: 0 20px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  background-color: var(--Gris-01);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.267);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.267);
+}
+
+.nav-categories > button > a {
+  text-decoration: none;
+}
+
+.nav-categories > button > a > img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-categories > button > a > h5 {
+  color: var(--Blanco);
+  font-size: 25px;
+  font-weight: 200;
+}
+/*# sourceMappingURL=styles.css.map */

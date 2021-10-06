@@ -20,11 +20,68 @@
     --Glass: rgba(255, 255, 255, 0.3);
 }
 
-h1{font-size: 120px; font-weight: 600;}
+$breakpoints: (
+    "phone":        480px,    
+    "tablet":       800px,   
+    "desktop":      1080px,
+    "infinite":     50000px
+);
 
-h2{font-size: 65px; font-weight: 400;}
+@mixin mq($breakpoint){
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)){
+        @content
+    }
+}
 
-h3{font-size: 50px; font-weight: 400;}
+h1{
+    font-weight: 600;
+
+    @include mq("infinite") {
+    font-size: 100px;
+    }    
+    @include mq("desktop") {
+        font-size: 90px;
+    }
+    @include mq("tablet") {
+        font-size: 50px;
+    }   
+    @include mq("phone") {
+        font-size: 30px;
+    }
+}
+
+h2{
+    font-weight: 400;
+
+    @include mq("infinite") {
+        font-size: 70px;
+    }    
+    @include mq("desktop") {
+        font-size: 50px;
+    }
+    @include mq("tablet") {
+        font-size: 30px;
+    }   
+    @include mq("phone") {
+        font-size: 20px;
+    }
+
+}
+
+h3{font-weight: 400;
+
+    @include mq("infinite") {
+        font-size: 55px;
+    }    
+    @include mq("desktop") {
+        font-size: 40px;
+    }
+    @include mq("tablet") {
+        font-size: 25px;
+    }   
+    @include mq("phone") {
+        font-size: 18px;
+    }}
 
 h4{font-size: 35px;}
 
@@ -102,7 +159,17 @@ header{
 }
 
 .header-center>h2{
-    line-height: 60px
+    line-height: 100px;
+
+    @include mq("desktop") {
+        line-height: 75px;
+    }
+    @include mq("tablet") {
+        line-height: 45px;
+    }   
+    @include mq("phone") {
+        line-height: 30px;
+    }
 }
 
 .header-center>h3{
@@ -215,7 +282,7 @@ header{
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.226);
 
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.05);
         background-color: var(--Amarillo-02);
     }
 }
@@ -341,7 +408,7 @@ header{
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.226);
             
             &:hover{
-                transform: scale(1.1);
+                transform: scale(1.05);
                 background-color: var(--Azul-02) ;
             }
 
@@ -368,3 +435,65 @@ header{
     }
 }
 
+
+/*=============== ARTICULO 01 ===============*/
+
+.article-01{
+    margin: 5% 10%;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        
+
+    img{
+        width: 70%;
+    }
+    
+    .article-content{
+        display: flex;
+        background-image: url(../Imgs/media/barsss.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        text-align: right;
+        color: var(--Gris-01);
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 25% ;
+        
+        h3{            
+            margin-bottom: 3%;
+            font-weight: 500;
+        }
+
+        p{
+            padding-left: 15%;
+            margin-bottom: 3%;
+            font-size: 25px;
+        }
+
+        button{
+            align-self: flex-end;
+            padding: 5px;
+            display: flex;
+            background: var(--Azul-01);
+            border-radius: 30px;            
+
+            &:hover{
+                transform: scale(1.05);
+                background: var(--Azul-02);
+            }
+
+            a{
+                width: 100%;
+                color: var(--Blanco);
+                text-align: center;
+                text-decoration: none;
+                
+                p{
+                    padding: 5px 15px;
+                }
+            }
+            
+        }
+    }
+}

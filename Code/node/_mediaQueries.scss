@@ -1,0 +1,85 @@
+
+/* ====================  FULL OF MQ =================== */
+
+$breakpoints: (
+    "phone":        480px,    
+    "tablet":       800px,   
+    "desktop":      1080px,
+    "infinite":     50000px
+);
+
+@mixin mq($breakpoint){
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)){
+        @content
+    }
+}
+
+h1{
+    font-weight: 600;
+
+    @include mq("infinite") {
+    font-size: 100px;
+    }    
+    @include mq("desktop") {
+        font-size: 90px;
+    }
+    @include mq("tablet") {
+        font-size: 50px;
+    }   
+    @include mq("phone") {
+        font-size: 30px;
+    }
+}
+
+h2{
+    font-weight: 400;
+
+    @include mq("infinite") {
+        font-size: 75px;
+    }    
+    @include mq("desktop") {
+        font-size: 50px;
+    }
+    @include mq("tablet") {
+        font-size: 30px;
+    }   
+    @include mq("phone") {
+        font-size: 20px;
+    }
+
+}
+
+h3{font-weight: 400;
+
+    @include mq("infinite") {
+        font-size: 65px;
+    }    
+    @include mq("desktop") {
+        font-size: 40px;
+    }
+    @include mq("tablet") {
+        font-size: 25px;
+    }   
+    @include mq("phone") {
+        font-size: 18px;
+    }}
+
+    h4{font-size: 35px;
+    
+    }
+ 
+
+    /* =====================  SPECIFIC MQ ======================*/
+
+.header-center>h2{
+
+    @include mq("desktop") {
+        line-height: 75px;
+    }
+    @include mq("tablet") {
+        line-height: 45px;
+    }   
+    @include mq("phone") {
+        line-height: 30px;
+    }
+}

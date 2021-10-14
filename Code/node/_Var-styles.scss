@@ -1,0 +1,37 @@
+/*==================== ESTILOS GENERALES ====================*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    transition: all .5s;
+}
+
+:root{
+    --Negro: #000;
+    --Blanco: #fff;
+    --Gris-01: #345b63;
+    --Azul-01: #00A19D;
+    --Azul-02: #01706e;
+    --Amarillo-01: #FFB344;
+    --Amarillo-02: #f19f24;
+    --Glass: rgba(255, 255, 255, 0.3);
+}
+
+.reverse{
+    transform: scaleX(-1);
+}
+
+img{
+    max-width: 100vw;
+}
+
+.bookmark-black{
+    fill: #000;
+}
+
+button{
+    border: none;
+}

@@ -9,16 +9,20 @@
   font-size: 16px;
   -webkit-transition: all .5s;
   transition: all .5s;
+  scroll-behavior: smooth;
 }
 
 :root {
   --Negro: #000;
   --Blanco: #fff;
   --Gris-01: #345b63;
+  --Gris-02: #1c3135;
   --Azul-01: #00A19D;
   --Azul-02: #01706e;
   --Amarillo-01: #FFB344;
   --Amarillo-02: #f19f24;
+  --verde-01: #00A14A;
+  --rojo-01: #C02116;
   --Glass: rgba(255, 255, 255, 0.3);
 }
 
@@ -39,15 +43,35 @@ button {
   border: none;
 }
 
-/*============ HEADER ==============*/
-header {
+.area {
+  overflow: auto;
+}
+
+/*============ ALL NAVS & BG header ============*/
+/*======= HEADER BG =======*/
+.header-main {
   background: url("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
+  height: 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: 100%;
   color: var(--Blanco);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
 }
 
+.header-hardware {
+  background: url("../Imgs/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 120%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.253);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.253);
+}
+
+/*==== SPECIFIC ASPECTS ====*/
 .header-top {
   padding-top: 2%;
   display: -webkit-box;
@@ -79,7 +103,7 @@ header {
   width: 100%;
 }
 
-.Logo {
+.Logo a {
   justify-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,24 +113,37 @@ header {
           align-items: center;
   color: var(--Blanco);
   text-shadow: 0.5px 0.9px 0.2px rgba(0, 0, 0, 0.253);
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#logo-icon-yellowS {
+.Logo a h3 {
+  font-size: 55px;
+}
+
+.Logo a #logo-icon, .Logo a #logo-icon-yellowS {
   margin: 0 3%;
-  width: clamp(10%, 100px, 30%);
+  width: clamp(10%, 80px, 30%);
 }
 
 .bars {
   width: clamp(10%, 300px, 14%);
   height: minmax(10px, 30px);
+  right: 0;
+}
+
+.bars a {
+  float: right;
 }
 
 .bars > #menu-icon {
   width: 20%;
   height: clamp(1%, 20px, 2%);
-  float: right;
 }
 
+/*============ HEADER ==============*/
 .header-center {
   margin: 3% 0 13% 15%;
 }
@@ -156,8 +193,20 @@ header {
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.267);
 }
 
-.nav-categories > button:hover {
-  background-color: var(--Gris-01);
+.nav-categories .hardware:hover {
+  background-color: var(--rojo-01);
+}
+
+.nav-categories .software:hover {
+  background-color: var(--verde-01);
+}
+
+.nav-categories .conceptos:hover {
+  background-color: var(--Azul-02);
+}
+
+.nav-categories .articulos:hover {
+  background-color: var(--Gris-02);
 }
 
 .nav-categories > button > a {
@@ -823,4 +872,6 @@ h4 {
     line-height: 30px;
   }
 }
+
+/**/
 /*# sourceMappingURL=styles.css.map */

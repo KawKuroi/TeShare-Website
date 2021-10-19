@@ -1,0 +1,60 @@
+
+/*=========== Footer ===========*/
+
+.footer-box{
+    background: #000;
+   
+
+.main-footer{
+    margin-top: 5%;
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "logo copy icons";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    padding: 15px 0;
+
+    .footer-logo{
+        width: 100%;
+        display: flex;
+        grid-area: logo;
+        align-items: center;
+
+        img{
+            width: 75px;
+        }
+
+        p{  
+            margin-left: 3%;
+            color: var(--Blanco);
+            font-size: 30px;
+        }
+    }
+    .footer-copy{
+        color: var(--Blanco);
+
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .footer-icons{
+        width: 190px;
+        justify-self: right;
+        display: flex;
+        a{
+            width: 100%;
+            margin-left: 4%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+}

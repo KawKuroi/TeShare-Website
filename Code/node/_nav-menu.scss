@@ -1,0 +1,96 @@
+
+/*============ ALL NAVS & BG header ============*/
+
+@mixin header-main($img){
+    background: url($img);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: var(--Blanco);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253); 
+}
+
+@mixin header-lobbys($img){
+    background: url($img);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 120%;
+    color: var(--Blanco);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+    height: 100vh;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+}
+
+/*======= HEADER BG =======*/
+
+.header-main{
+    @include header-main("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
+}
+
+.header-hardware{
+    @include header-lobbys("../Imgs/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg");
+}
+
+/*==== SPECIFIC ASPECTS ====*/
+
+.header-top{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.icons{
+
+    width: 260px;
+    justify-self: right;
+    display: flex;
+    a{
+        width: 100%;
+        margin-left: 3%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.Logo{
+
+    a{
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        color: var(--Blanco);
+        text-shadow: 0.5px 0.9px 0.2px rgba(0, 0, 0, 0.253);
+        text-decoration: none;
+        justify-content: center;
+
+        h3{
+            font-size: 55px;
+        }
+
+        #logo-icon, #logo-icon-yellowS{
+            margin: 0 3%;
+            width: clamp(10%,80px,30%)
+        }
+    }
+    
+}   
+
+.bars{
+    width: clamp(10%,300px,14%);
+    height: minmax(10px,30px);
+    right: 0;
+    
+    a{
+        float: right;
+
+    }
+}
+.bars>#menu-icon{
+    width: 20%;
+    height: clamp(1%,20px,2%);
+    
+}

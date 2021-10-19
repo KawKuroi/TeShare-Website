@@ -7,16 +7,20 @@
     font-family: 'inter', sans-serif;
     font-size: 16px;
     transition: all .5s;
+    scroll-behavior: smooth;
 }
 
 :root{
     --Negro: #000;
     --Blanco: #fff;
     --Gris-01: #345b63;
+    --Gris-02: #1c3135;
     --Azul-01: #00A19D;
     --Azul-02: #01706e;
     --Amarillo-01: #FFB344;
     --Amarillo-02: #f19f24;
+    --verde-01: #00A14A;
+    --rojo-01: #C02116;
     --Glass: rgba(255, 255, 255, 0.3);
 }
 
@@ -34,4 +38,8 @@ img{
 
 button{
     border: none;
+}
+
+.area{
+    overflow: auto;
 }

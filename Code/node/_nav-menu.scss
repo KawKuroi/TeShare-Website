@@ -15,21 +15,11 @@
     background: url($img);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 120%;
+    background-size: 100%;
     color: var(--Blanco);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
     height: 100vh;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
-}
-
-/*======= HEADER BG =======*/
-
-.header-main{
-    @include header-main("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
-}
-
-.header-hardware{
-    @include header-lobbys("../Imgs/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg");
 }
 
 /*==== SPECIFIC ASPECTS ====*/
@@ -44,7 +34,7 @@
 
 .icons{
 
-    width: 260px;
+    width: 234px;
     justify-self: right;
     display: flex;
     a{
@@ -68,29 +58,52 @@
         justify-content: center;
 
         h3{
-            font-size: 55px;
+            font-size: 50px;
         }
 
         #logo-icon, #logo-icon-yellowS{
             margin: 0 3%;
-            width: clamp(10%,80px,30%)
+            width: clamp(10%,72px,30%)
         }
     }
     
 }   
 
 .bars{
-    width: clamp(10%,300px,14%);
-    height: minmax(10px,30px);
+    width: clamp(10%,234px,14%);
+    
     right: 0;
     
     a{
         float: right;
-
     }
 }
-.bars>#menu-icon{
-    width: 20%;
-    height: clamp(1%,20px,2%);
-    
+
+#menu-icon{
+    width: 50px;
+    height: 50px;
+}
+
+/*======= HEADER BG =======*/
+
+.header-main{
+    @include header-main("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
+}
+
+.header-hardware{
+    @include header-lobbys("../Imgs/anas-alshanti-feXpdV001o4-unsplash.jpg");
+    background-attachment: scroll;
+}
+.header-software{
+    @include header-lobbys("../Imgs/windows-KXIWqtmvfxg-unsplash.jpg");
+    background-attachment: scroll;
+}
+.header-conceptos{
+    @include header-lobbys("../Imgs/ayeisa-vargas-wkSnjjRJ54I-unsplash.jpg");
+    background-position: 25% 50%;
+}
+.header-articulos{
+    @include header-lobbys("../Imgs/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg");
+    background-position: 25% 70%;
+    background-attachment: scroll;
 }

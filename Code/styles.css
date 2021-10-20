@@ -47,102 +47,6 @@ button {
   overflow: auto;
 }
 
-/*============ ALL NAVS & BG header ============*/
-/*======= HEADER BG =======*/
-.header-main {
-  background: url("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  color: var(--Blanco);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-}
-
-.header-hardware {
-  background: url("../Imgs/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 120%;
-  color: var(--Blanco);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  height: 100vh;
-  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.253);
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.253);
-}
-
-/*==== SPECIFIC ASPECTS ====*/
-.header-top {
-  padding-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 5%;
-}
-
-.icons {
-  width: 260px;
-  justify-self: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.icons a {
-  width: 100%;
-  margin-left: 3%;
-}
-
-.icons a img {
-  width: 100%;
-}
-
-.Logo a {
-  justify-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--Blanco);
-  text-shadow: 0.5px 0.9px 0.2px rgba(0, 0, 0, 0.253);
-  text-decoration: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.Logo a h3 {
-  font-size: 55px;
-}
-
-.Logo a #logo-icon, .Logo a #logo-icon-yellowS {
-  margin: 0 3%;
-  width: clamp(10%, 80px, 30%);
-}
-
-.bars {
-  width: clamp(10%, 300px, 14%);
-  height: minmax(10px, 30px);
-  right: 0;
-}
-
-.bars a {
-  float: right;
-}
-
-.bars > #menu-icon {
-  width: 20%;
-  height: clamp(1%, 20px, 2%);
-}
-
 /*============ HEADER ==============*/
 .header-center {
   margin: 3% 0 13% 15%;
@@ -347,6 +251,9 @@ button {
 }
 
 .section-02 > .section-toppart > .section-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: frases;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -583,6 +490,12 @@ button {
   display: flex;
 }
 
+.section-04 .section-content .body-articles .section-content-articles .articles-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+}
+
 .section-04 .section-content .body-articles .section-content-articles .articles-img img {
   margin-top: 8%;
   width: 40px;
@@ -694,75 +607,99 @@ button {
   padding-top: 10%;
 }
 
-.footer-box {
-  background: #000;
-  margin-top: 5%;
+/*============ ALL NAVS & BG header ============*/
+/*======= HEADER BG =======*/
+.header-main {
+  background: url("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
 }
 
-.footer-box .footer {
-  width: 90%;
-  margin: auto;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "logo copy icons";
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  padding: 20px 0;
+.header-hardware {
+  background: url("../Imgs/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 120%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
 }
 
-.footer-box .footer .footer-logo {
-  width: 100%;
+/*==== SPECIFIC ASPECTS ====*/
+.header-top {
+  padding-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: logo;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 5%;
 }
 
-.footer-box .footer .footer-logo img {
-  width: 75px;
-}
-
-.footer-box .footer .footer-logo p {
-  margin-left: 3%;
-  color: var(--Blanco);
-  font-size: 30px;
-}
-
-.footer-box .footer .footer-copy {
-  color: var(--Blanco);
-}
-
-.footer-box .footer .footer-copy p {
-  font-size: 18px;
-}
-
-.footer-box .footer .footer-icons {
-  width: 190px;
+.icons {
+  width: 234px;
   justify-self: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-box .footer .footer-icons a {
+.icons a {
   width: 100%;
-  margin-left: 4%;
+  margin-left: 3%;
 }
 
-.footer-box .footer .footer-icons a img {
+.icons a img {
   width: 100%;
+}
+
+.Logo a {
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--Blanco);
+  text-shadow: 0.5px 0.9px 0.2px rgba(0, 0, 0, 0.253);
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Logo a h3 {
+  font-size: 50px;
+}
+
+.Logo a #logo-icon, .Logo a #logo-icon-yellowS {
+  margin: 0 3%;
+  width: clamp(10%, 72px, 30%);
+}
+
+.bars {
+  width: clamp(10%, 234px, 14%);
+  right: 0;
+}
+
+.bars a {
+  float: right;
+}
+
+#menu-icon {
+  width: 50px;
+  height: 50px;
 }
 
 /* ====================  FULL OF MQ =================== */
@@ -851,7 +788,7 @@ h3 {
 }
 
 h4 {
-  font-size: 35px;
+  font-size: 32px;
 }
 
 /* =====================  SPECIFIC MQ ======================*/
@@ -871,6 +808,87 @@ h4 {
   .header-center > h2 {
     line-height: 30px;
   }
+}
+
+/*=========== Footer ===========*/
+.footer-box {
+  background: #000;
+}
+
+.footer-box .main-footer {
+  margin-top: 5%;
+}
+
+.footer-box .footer {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo copy icons";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 15px 0;
+}
+
+.footer-box .footer .footer-logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-box .footer .footer-logo img {
+  width: 75px;
+}
+
+.footer-box .footer .footer-logo p {
+  margin-left: 3%;
+  color: var(--Blanco);
+  font-size: 30px;
+}
+
+.footer-box .footer .footer-copy {
+  color: var(--Blanco);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: copy;
+}
+
+.footer-box .footer .footer-copy p {
+  font-size: 18px;
+}
+
+.footer-box .footer .footer-icons {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: icons;
+  width: 190px;
+  justify-self: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-box .footer .footer-icons a {
+  width: 100%;
+  margin-left: 4%;
+}
+
+.footer-box .footer .footer-icons a img {
+  width: 100%;
 }
 
 /**/

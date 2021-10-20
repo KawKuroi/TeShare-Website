@@ -23,6 +23,7 @@
   --Amarillo-02: #f19f24;
   --verde-01: #00A14A;
   --rojo-01: #C02116;
+  --rojo-02: #c01649;
   --Glass: rgba(255, 255, 255, 0.3);
 }
 
@@ -133,7 +134,7 @@ h3 {
 }
 
 h4 {
-  font-size: 35px;
+  font-size: 32px;
 }
 
 /* =====================  SPECIFIC MQ ======================*/
@@ -156,29 +157,6 @@ h4 {
 }
 
 /*============ ALL NAVS & BG header ============*/
-/*======= HEADER BG =======*/
-.header-main {
-  background: url("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  color: var(--Blanco);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-}
-
-.header-hardware {
-  background: url("../Imgs/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 120%;
-  color: var(--Blanco);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  height: 100vh;
-  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
-}
-
 /*==== SPECIFIC ASPECTS ====*/
 .header-top {
   padding-top: 2%;
@@ -195,7 +173,7 @@ h4 {
 }
 
 .icons {
-  width: 260px;
+  width: 234px;
   justify-self: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,17 +206,16 @@ h4 {
 }
 
 .Logo a h3 {
-  font-size: 55px;
+  font-size: 50px;
 }
 
 .Logo a #logo-icon, .Logo a #logo-icon-yellowS {
   margin: 0 3%;
-  width: clamp(10%, 80px, 30%);
+  width: clamp(10%, 72px, 30%);
 }
 
 .bars {
-  width: clamp(10%, 300px, 14%);
-  height: minmax(10px, 30px);
+  width: clamp(10%, 234px, 14%);
   right: 0;
 }
 
@@ -246,108 +223,97 @@ h4 {
   float: right;
 }
 
-.bars > #menu-icon {
-  width: 20%;
-  height: clamp(1%, 20px, 2%);
+#menu-icon {
+  width: 50px;
+  height: 50px;
 }
 
-/*=========== Footer ===========*/
-.footer-box {
-  background: #000;
-}
-
-.footer-box .main-footer {
-  margin-top: 5%;
-}
-
-.footer-box .footer {
-  width: 90%;
-  margin: auto;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "logo copy icons";
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  padding: 15px 0;
-}
-
-.footer-box .footer .footer-logo {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: logo;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer-box .footer .footer-logo img {
-  width: 75px;
-}
-
-.footer-box .footer .footer-logo p {
-  margin-left: 3%;
+/*======= HEADER BG =======*/
+.header-main {
+  background: url("../Imgs/nasa-gYwfpVI2JzM-unsplash.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   color: var(--Blanco);
-  font-size: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
 }
 
-.footer-box .footer .footer-copy {
+.header-hardware {
+  background: url("../Imgs/anas-alshanti-feXpdV001o4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-attachment: scroll;
 }
 
-.footer-box .footer .footer-copy p {
-  font-size: 18px;
+.header-software {
+  background: url("../Imgs/windows-KXIWqtmvfxg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-attachment: scroll;
 }
 
-.footer-box .footer .footer-icons {
-  width: 190px;
-  justify-self: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header-conceptos {
+  background: url("../Imgs/ayeisa-vargas-wkSnjjRJ54I-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 50%;
 }
 
-.footer-box .footer .footer-icons a {
-  width: 100%;
-  margin-left: 4%;
+.header-articulos {
+  background: url("../Imgs/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 70%;
+  background-attachment: scroll;
 }
 
-.footer-box .footer .footer-icons a img {
-  width: 100%;
-}
-
-/*============ HEADER ==============*/
+/* ======= LOBBY STYLES ======== */
 .header-center {
   margin: 8% 0 2% 0;
 }
 
-.header-center > h2 {
+.header-center h2 {
   line-height: 100px;
   text-align: center;
-  font-size: 120px;
+  font-size: 108px;
   font-weight: 700;
   letter-spacing: 3.5px;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.253);
 }
 
-.header-center > h3 {
+.header-center h3 {
   letter-spacing: 4px;
   font-weight: 200;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.438);
 }
 
 .header-nav {
-  padding: 3% 6%;
+  padding: 2% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,8 +335,8 @@ h4 {
 }
 
 .nav-categories > button {
-  width: 170px;
-  height: 150px;
+  width: 160px;
+  height: 140px;
   border-radius: 20%;
   margin: 0 20px;
   -ms-grid-column-align: end;
@@ -401,8 +367,8 @@ h4 {
 }
 
 .nav-categories > button > a > img {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
 }
 
 .nav-categories > button > a > h5 {
@@ -419,20 +385,28 @@ h4 {
 }
 
 .phrase .text {
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 200;
+  font-weight: 300;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.438);
 }
 
 .phrase .harder {
+  margin-top: 3%;
   font-size: 25px;
   font-weight: 500;
   text-align: end;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.438);
+}
+
+.phrase .Stext, .phrase .Sharder {
+  text-align: start;
 }
 
 /*================ GRID NAV =======================*/
 .lobby-content {
-  background: var(--Azul-01);
-  padding: 7%;
+  background: #060015;
+  padding: 3% 7%;
 }
 
 .lobby-content h2 {
@@ -492,6 +466,8 @@ h4 {
   overflow: hidden;
   position: relative;
   z-index: 1000;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
 }
 
 .lobby-content .lobby-grid .grid-card:hover {
@@ -523,11 +499,11 @@ h4 {
 }
 
 .lobby-content .lobby-grid .grid-card .content-space {
-  background: var(--Amarillo-01);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   position: relative;
   z-index: 500;
+  padding-bottom: 5%;
 }
 
 .lobby-content .lobby-grid .grid-card .content-space p {
@@ -536,16 +512,144 @@ h4 {
   padding: 5% 0;
 }
 
+/*======================== BG =======================*/
+.HLobby {
+  background: #060015;
+}
+
+.HSpace {
+  background-color: var(--rojo-02);
+}
+
+.HSpace p {
+  color: #fff;
+}
+
+.SLobby {
+  background: #131313;
+}
+
+.SSpace {
+  background-color: var(--Amarillo-01);
+}
+
+.SSpace p {
+  color: #131313;
+}
+
+.CLobby {
+  background: #2d5e72;
+}
+
+.CSpace {
+  background-color: var(--Azul-01);
+}
+
+.CSpace p {
+  color: var(--Blanco);
+}
+
+.ALobby {
+  background: #020113;
+}
+
+.ASpace {
+  background-color: #3c0a46;
+}
+
+.ASpace p {
+  color: #ffffff;
+}
+
 /*================== BG-CARDS EDITS ==================*/
 /*--------------------- HARDWARE ----------------------*/
 .Hrd-card-01 {
   width: 100%;
   height: 270px;
-  background: url("/Imgs/katie-barrett-aLIJlPrrjRM-unsplash.jpg");
+  background: url("../Imgs/katie-barrett-aLIJlPrrjRM-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 25% 70%;
 }
 
-/**/
+/*=========== Footer ===========*/
+.footer-box {
+  background: #000;
+}
+
+.footer-box .main-footer {
+  margin-top: 5%;
+}
+
+.footer-box .footer {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo copy icons";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 15px 0;
+}
+
+.footer-box .footer .footer-logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-box .footer .footer-logo img {
+  width: 75px;
+}
+
+.footer-box .footer .footer-logo p {
+  margin-left: 3%;
+  color: var(--Blanco);
+  font-size: 30px;
+}
+
+.footer-box .footer .footer-copy {
+  color: var(--Blanco);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: copy;
+}
+
+.footer-box .footer .footer-copy p {
+  font-size: 18px;
+}
+
+.footer-box .footer .footer-icons {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: icons;
+  width: 190px;
+  justify-self: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-box .footer .footer-icons a {
+  width: 100%;
+  margin-left: 4%;
+}
+
+.footer-box .footer .footer-icons a img {
+  width: 100%;
+}
 /*# sourceMappingURL=lobby-styles.css.map */

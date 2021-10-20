@@ -1,0 +1,115 @@
+
+/*============== START ==============*/
+
+.header-center{
+    margin: 8% 0 2% 0;
+
+    h2{
+        line-height: 100px;
+        text-align: center;
+        font-size: 90px;
+        font-weight: 700;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.253);
+    }
+
+    h4{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 300;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.253);
+    }
+
+    h3{
+        letter-spacing:4px;
+        font-weight: 200;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.438);   
+    }
+}
+
+.header-nav{
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nav-categories{
+    display: flex;
+}
+
+.nav-title{
+    border-bottom: 2px solid #fff;
+}
+
+.nav-categories>button{
+    width: 160px;
+    height: 140px;
+    border-radius: 20%;
+    margin: 0 20px;
+    justify-self: end;
+    background-color: var(--Glass);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.267);
+}
+
+.nav-categories{
+
+    .hardware:hover{
+        background-color: var(--rojo-01);
+    }
+    .software:hover{
+        background-color: var(--verde-01);
+    }
+    .conceptos:hover{
+        background-color: var(--Azul-02);
+    }
+    .articulos:hover{
+        background-color: var(--Gris-02);
+    }
+
+}
+
+.nav-categories>button>a{
+    text-decoration: none;
+}
+
+.nav-categories>button>a>img{
+    width: 72px;
+    height: 72px;
+}
+
+.nav-categories>button>a>h5{
+    color: var(--Blanco);
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.phrase{
+    width: 60%;   
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+
+    .text{
+        font-size: 24px;
+        font-weight: 200;
+        font-weight: 300;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.438);
+ 
+    }
+
+
+    .harder{
+        margin-top: 3%;
+        font-size: 25px;
+        font-weight: 500;        
+        text-align: end;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.438);
+    }
+
+    
+    .Stext,.Sharder{
+        text-align: start;
+    }
+}
+

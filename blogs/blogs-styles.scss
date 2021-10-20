@@ -1,0 +1,40 @@
+@import '../Code/node/Var-styles','../Code/node/nav-menu','main-blog-styles','../Code/node/mediaQueries', '../Code/node/footer-styles';
+
+    article{
+        background: #000;
+    }
+
+    p, h4, h2, h5 {
+
+        color: #fff;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .articulo{
+
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "index content";
+    }
+
+    .index{
+        grid-area: index;
+        position: sticky;
+        top: 0;
+        
+        div{
+            ul{
+                list-style: none;
+            }
+        }
+
+    }
+
+    .content{
+        grid-area: content;
+    }

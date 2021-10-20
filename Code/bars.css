@@ -22,6 +22,7 @@
   --Amarillo-02: #f19f24;
   --verde-01: #00A14A;
   --rojo-01: #C02116;
+  --rojo-02: #c01649;
   --Glass: rgba(255, 255, 255, 0.3);
 }
 
@@ -49,6 +50,50 @@ button {
 body {
   width: 100vw;
   height: 100vh;
+  background: #fff;
+}
+
+.bar-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.bar-close a {
+  width: 100px;
+  height: 100px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-top: 3%;
+  margin-right: 3%;
+}
+
+.bar-box {
+  width: 80%;
+  margin: auto;
+}
+
+.bar-box a {
+  text-decoration: none;
+  color: #000;
+}
+
+.bar-box a h2 {
+  font-size: 70px;
+  font-weight: 300;
+}
+
+.bar-box a h2:hover {
+  color: var(--Azul-02);
+}
+
+.bar-box .line {
+  margin-top: 1%;
+  width: 100%;
+  height: 10px;
   background: var(--Amarillo-01);
 }
 /*# sourceMappingURL=bars.css.map */

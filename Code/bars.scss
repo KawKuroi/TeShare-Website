@@ -5,5 +5,47 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: var(--Amarillo-01);
+    background: #fff;
+}
+
+.bar-close{
+    display: flex;
+    justify-content: flex-end;
+
+    a{
+        width: 100px;
+        height: 100px;
+        justify-self: end;
+        margin-top: 3%;
+        margin-right: 3%;
+
+    }
+    
+}
+ 
+
+.bar-box{
+    width: 80%;
+    margin: auto;
+
+    a{
+        text-decoration: none;
+        color: #000;
+        
+        h2{
+            font-size: 70px;
+            font-weight: 300;
+            
+            &:hover{
+                color: var(--Azul-02);
+            }
+        }
+    }
+
+    .line{
+        margin-top: 1%;
+        width: 100%;
+        height: 10px;
+        background: var(--Amarillo-01);
+    }
 }

@@ -158,7 +158,7 @@ button {
 }
 
 .header-conceptos {
-  background: url("../Imgs/ayeisa-vargas-wkSnjjRJ54I-unsplash.jpg");
+  background: url("../Imgs/gabriel-voltz-16fUCKyba8g-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -167,7 +167,7 @@ button {
   height: 100vh;
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
-  background-position: 25% 50%;
+  background-position: 25% 30%;
 }
 
 .header-articulos {
@@ -185,7 +185,7 @@ button {
 }
 
 .header-blog-Páginas_Web {
-  background: url("../Imgs/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg");
+  background: url("../Imgs/stillness-inmotion-Gq3i2dnLGik-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -194,7 +194,7 @@ button {
   height: 100vh;
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
-  background-position: 25% 70%;
+  background-position: 25% 20%;
   background-attachment: scroll;
 }
 
@@ -504,44 +504,166 @@ h4 {
   width: 100%;
 }
 
-article {
-  background: #000;
-}
-
-p, h4, h2, h5 {
-  color: #fff;
-}
-
 a {
   text-decoration: none;
 }
 
 .articulo {
-  width: 80%;
+  width: 85%;
   margin: auto;
+  padding-top: 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
       grid-template-areas: "index content";
 }
 
 .index {
+  width: 100%;
+  height: 100%;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: index;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index .index-content {
+  padding-top: 10%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
-.index div ul {
+.index .index-content div ul {
   list-style: none;
 }
 
+.index .index-butt {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  margin-bottom: 5%;
+}
+
+.index .index-butt a {
+  width: 50px;
+}
+
+.index .index-butt a img {
+  width: 100%;
+}
+
 .content {
+  margin-left: 3%;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: content;
+}
+
+.content .center-inf {
+  margin: auto;
+  width: 50%;
+}
+
+.content img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  max-height: 450px;
+}
+
+article {
+  background: #fff;
+}
+
+article h4 {
+  font-size: 50px;
+  text-align: center;
+}
+
+article h5 {
+  font-size: 20px;
+}
+
+article p, article b, article i, article a {
+  font-size: 22px;
+}
+
+article h4 {
+  color: var(--Amarillo-02);
+}
+
+article h5 {
+  color: var(--Amarillo-02);
+}
+
+article p, article h2 {
+  color: #000;
+}
+
+article p b, article h2 b {
+  color: var(--Azul-02);
+}
+
+article a {
+  color: var(--rojo-01);
+  font-weight: 600;
+}
+
+article h2 {
+  font-weight: 600;
+}
+
+.masInfo {
+  font-size: 35px;
+  font-style: italic;
+}
+
+.blog-link {
+  width: 70%;
+  margin: auto;
+}
+
+.masInfo-space {
+  padding-bottom: 10%;
+}
+
+.masInfo-space ul {
+  margin-bottom: 5%;
+}
+
+/*==========  NIGHT MODIFICATION ==========*/
+.night {
+  background: #000;
+}
+
+.night h4 {
+  color: var(--Amarillo-01);
+}
+
+.night h5 {
+  color: var(--Amarillo-01);
+}
+
+.night p, .night h2 {
+  color: #fff;
+}
+
+.night p b, .night h2 b {
+  color: var(--Azul-02);
 }
 /*# sourceMappingURL=blogs-styles.css.map */

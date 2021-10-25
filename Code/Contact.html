@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imgs/media/logoN.svg" type="image/x-icon">
+    <link rel="stylesheet" href="lobby-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+
+    <header class="header-Contact">
+
+        <div class="header-top">
+
+            <div class="icons">
+                <a href="#"><img src="../imgs/media/google-gmail-svgrepo-com.svg" alt="img/svg" id="gmail-icon"></a>
+                <a href="#"><img src="../imgs/media/instagram-2-1-logo-svgrepo-com.svg" alt="img/svg" id="insta-icon"></a>
+                <a href="#"><img src="../imgs/media/githubWHITE-svgrepo-com.svg" alt="img/svg" id="github-icon"></a>
+                <a href="#"><img src="../imgs/media/twitter-svgrepo-com.svg" alt="img/svg" id="twitter-icon"></a>
+            </div>
+
+            <div class="Logo">
+                <a href="./index.html">
+                    <h3>Te</h3><img src="../imgs/media/logo3-blue.svg" alt="img/svg" id="logo-icon"><h3>Share</h3>
+                </a>
+            </div>
+
+            <div class="bars">
+                <a href="./bars.html"><img src="../Imgs/Icons/Bars.svg" alt="img/svg" id="menu-icon"></a>
+            </div>
+            
+        </div>
+
+        <div class="header-center">
+            
+            <h2>CONTACTO</h2>       
+
+        </div>
+
+        <div class="phrase">
+            <p class="text">
+                “Tan sólo por la educación puede el hombre llegar a ser hombre. <br> El hombre no es más que lo que la educación hace de él”
+            </p>
+            <h4 class="harder">
+                - Kant
+            </h4>
+            
+        </div>
+
+    </header>
+
+    <section id="seccion14" class="section" data-scroll-spy>
+
+        
+        <form class="contact-form" action="https://formsubmit.co/kevinaxelhr@gmail.com" method="POST" target="_blank">
+
+        <legend>Envíanos tus comentarios</legend>
+        <input type="text" name="name" placeholder="Escribe tu nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+
+        <input type="email" name="email" placeholder="Escribe tu email" title="Email incorrecto"pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+
+        <input type="text" name="subject" placeholder="Asunto a tratar" title="El Asunto es requerido" required>
+
+        <textarea name="comments" rows="5" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+
+        <input type="submit" value="Enviar">
+
+        <div class="contact-form-loader none">
+            <img src="assets/loader.svg" alt="Cargando">
+        </div>
+
+        <div class="contact-form-response none">
+            <p>Los datos han sido enviados</p>
+        </div>
+        </form>
+
+      </section>
+      <script src="" type="module"></script>
+    </body>
+
+</html>

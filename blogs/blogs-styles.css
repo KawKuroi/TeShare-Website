@@ -634,7 +634,7 @@ article h2 {
 }
 
 .blog-link {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -666,4 +666,6 @@ article h2 {
 .night p b, .night h2 b {
   color: var(--Azul-02);
 }
+
+/**/
 /*# sourceMappingURL=blogs-styles.css.map */

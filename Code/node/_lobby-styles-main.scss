@@ -12,6 +12,7 @@
     background: url($img-url);
     background-repeat: no-repeat;
     background-size:100%;
+    background-color: #000;
 }
 
 .header-center{
@@ -161,14 +162,15 @@
         .grid-card{
             display: flex;
             flex-direction: column;
-            width: 360px;
-            height: auto;
+            max-width: 360px;
+            height: 100%;
             border-radius: 30px;
             align-items: center;
             overflow: hidden;
             position: relative;
             z-index: 1000;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+           
 
             &:hover{
                 transform: scale(1.05);
@@ -187,11 +189,12 @@
                 background: var(--Blanco);
                 overflow: hidden;
                 position: relative;
-                z-index: 600;          
+                z-index: 600;        
+                
 
                 p{
                     margin: auto;
-                    width: 70%;
+                    width: 80%;
                     text-align: center;
                     font-size: 23px;
                     font-weight: 500; 
@@ -204,11 +207,17 @@
                 position: relative;
                 z-index: 500;
                 padding-bottom: 5%;
+                height: 100%;
+                
 
                 p{
                     width: 85%;
                     margin: auto;
                     padding: 5% 0;
+
+                    &::first-letter{
+                        text-transform: uppercase;
+                    }
                     
                 }
             }
@@ -245,7 +254,7 @@
 }
 
 .CLobby{
-    background: rgb(61, 40, 12);
+    background: var(--cafe-01);
 }
  
 .CSpace{
@@ -272,8 +281,45 @@
 
 /*--------------------- HARDWARE ----------------------*/
 
-.Hrd-card-01{
+#Srd-card-01{
     @include cards("../Imgs/katie-barrett-aLIJlPrrjRM-unsplash.jpg");
     background-position: 25% 70%;
+    
+}
+#Srd-card-02{
+    @include cards("https://images.unsplash.com/photo-1611532736579-6b16e2b50449?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1126&q=80");
+    background-position: 25% 50%;
+    
+}
+#Srd-card-03{
+    @include cards("https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-position: 25% 35%;
 }
 
+#Hrd-card-01{
+    @include cards("https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80");
+    background-position: 25% 35%
+}
+
+#Hrd-card-02{
+    @include cards("https://images.unsplash.com/photo-1542978709-19c95dc3bc7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80");
+    background-position: 25% 35%
+}
+
+#Hrd-card-03{
+    @include cards("https://images.unsplash.com/photo-1610415303067-67a841b36fd5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
+    background-position: 25% 50%
+}
+
+#Hrd-card-04{
+    @include cards("https://images.unsplash.com/photo-1602837385569-08ac19ec83af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=626&q=80");
+    background-position: 25% 50%
+}
+#Hrd-card-05{
+    @include cards("https://images.unsplash.com/photo-1593687395549-400945fed803?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80");
+    background-position: 25% 50%
+}
+#Hrd-card-06{
+    @include cards("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2012/10/3975-montar-fuente-alimentacion.jpg?itok=kDeX7_ng");
+    background-position: 25% 50%
+}

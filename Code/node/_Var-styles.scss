@@ -8,6 +8,10 @@
     font-size: 16px;
     transition: all .5s;
     scroll-behavior: smooth;
+    &::first-letter{
+        text-transform: uppercase;
+    }
+    
 }
 
 :root{
@@ -22,6 +26,8 @@
     --verde-01: #00A14A;
     --rojo-01: #C02116;
     --rojo-02: #c01649;
+    --cafe-01: #3d280c;
+    --cafe-02: #140d04;
     --Glass: rgba(255, 255, 255, 0.3);
 }
 
@@ -44,3 +50,4 @@ button{
 .area{
     overflow: auto;
 }
+  

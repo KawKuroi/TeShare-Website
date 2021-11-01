@@ -133,20 +133,23 @@
         color: var(--Blanco);
         font-size: 80px;
         font-weight: 500;
-        padding-bottom: 8%;
+        padding-bottom: 4%;
         margin-left: 4%;
         text-shadow: 2px 2px 1.2px rgba(0, 0, 0, 0.253);
     }
 
     .lobby-grid{
         display: grid;
-        grid-template-columns: repeat(3, 400px);
+        grid-template-columns: repeat(3, 450px);
         grid-template-rows: auto;
-        gap: 3%;
-        width: 80%;
+        gap: 6% 0;
+        width: 85%;
         margin: auto;
         justify-items: center;
-        align-content: center;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center ;
+        padding-bottom: 10%;
 
         @include mq("tablet"){
             grid-template-columns: 1fr 1fr;
@@ -162,7 +165,7 @@
         .grid-card{
             display: flex;
             flex-direction: column;
-            max-width: 360px;
+            max-width: 90%;
             height: 100%;
             border-radius: 30px;
             align-items: center;
@@ -215,10 +218,6 @@
                     margin: auto;
                     padding: 5% 0;
 
-                    &::first-letter{
-                        text-transform: uppercase;
-                    }
-                    
                 }
             }
 
@@ -226,7 +225,239 @@
 
     }
 }
+  /*=============  ORGANIZACIÓN DEL CONTENIDO CONCEPTOS ============*/
 
+  i{
+    color: var(--Gris-01);
+  }
+
+.grid-area{
+
+    padding-top: 10%;
+    background: none;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "indice contenido";
+    gap: 2%;
+
+    
+      .index{
+        padding-top: 0;
+        grid-area: indice;
+        width: auto;
+        margin: auto;
+      }
+      .index-content{
+        padding-top: 10%;
+      }
+      
+      .Cocontent{
+        grid-area: contenido;
+  
+        div{
+          width: 95%;
+          margin-left: 5%;
+          margin-bottom: 3%;
+          border-bottom: 1px solid rgb(136, 136, 136);
+          padding-bottom: 2%;
+         
+          i{
+            color: var(--Gris-01);
+            display: block;
+            text-align: right;
+          }
+         
+
+          p{
+            font-weight: 200;
+          }
+        }
+      }
+
+  }
+
+  #but-clas, #but-clas-S{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin-bottom: 2%;
+    background:  var(--rojo-01);
+    margin: 5% 0;   
+
+    p{
+      margin-left: 3%;
+      font-weight: 600;
+      font-size: 50px;
+    }
+
+  }
+  #but-clas{
+    margin-top: 0;
+  }
+  #but-clas-S{
+    background-color: var(--verde-01);
+  }
+  
+
+
+.CLobby{
+
+  h4{
+      font-size: 40px;
+      
+  }
+  h5{
+      font-size: 26px;
+  }
+  p,b,i,a{
+      font-size: 22px;
+  }
+  h4{
+      color: rgb(199, 115, 67);
+  }
+
+  h5{
+      color: rgb(199, 115, 67);
+  }
+
+  p,h2{
+    width: 75%;
+      color: #fff;
+      b{
+          color: var(--Azul-02);
+      }
+  }
+  a{
+      color: var(--rojo-01);
+      font-weight: 600;
+  }
+  h2{
+      font-weight: 600;
+  }
+
+  h3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 65px;
+  }
+
+}
+
+.masInfo{
+  
+  font-size: 35px;
+  font-style: italic;
+}
+.blog-link{
+  width: 80%;
+  margin: auto;
+}
+
+.masInfo-space{
+  padding-bottom: 10%;
+  ul{
+      margin-bottom: 5%; 
+  }
+}
+
+/*==========  NIGHT MODIFICATION ==========*/
+
+.night{
+  background: var(--cafe-02);
+  h4{
+      color: var(--Amarillo-01);
+  }
+  
+  h5{
+      color: rgb(158, 158, 158);
+  }
+
+  p{
+      color: rgb(158, 158, 158);
+      b{
+          color: var(--Azul-02);
+      }
+  }
+  
+  .blank_p{
+    color: #fff;
+  }
+
+  h3{
+    color: var(--Amarillo-01);
+  }
+  i{
+    color: var(--Azul-01);
+  }
+}
+
+
+/*=============== ARTICULOS =================*/
+
+.articles-box{
+  width: 70%;
+  margin: auto;
+ 
+  .article{
+    padding-bottom: 5%;
+    display: flex;
+    justify-items: baseline;
+
+    .icon-article{
+ 
+      min-width: 40px;
+      margin: 1%;
+
+      img{
+        width: 100%;
+      }
+    }
+ 
+    }
+    .text-article{
+      color: #fff;
+
+      h3{
+        font-size: 35px;
+        margin-bottom: 1%;
+      }
+      p{
+        font-weight: 200;
+        font-size: 23px;
+        margin-bottom: 3%;
+      }
+      a{
+        font-size: 26px;
+      }
+      div{
+        height: 350px;
+        margin: 2% 0;
+        
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+         
+        }
+      
+      
+      }
+      iframe{
+        margin: auto;
+        padding-bottom: 10%;
+        }
+      
+  }
+}
+.ALobby{
+
+  h2{
+
+    font-size: 68px;
+    font-weight: 700;
+  }
+}
 /*======================== BG =======================*/
 
 .HLobby{
@@ -267,6 +498,7 @@
 
 .ALobby{
     background: #00000e;
+    
 }
  
 .ASpace{

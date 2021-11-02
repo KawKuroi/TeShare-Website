@@ -142,4 +142,25 @@
         } 
     }
 
-/**/
+.up{
+    width: 70px;
+    height: 70px;
+    float: right;
+    padding: 8px;
+    background-color: var(--Azul-02);
+    border-radius: 50%;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 25px; 
+
+    a{
+        font-size: 27px;
+        color: #fff;
+        text-align: center;
+
+
+    }
+}

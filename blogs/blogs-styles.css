@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
 }
 
+*::first-letter {
+  text-transform: uppercase;
+}
+
 :root {
   --Negro: #000;
   --Blanco: #fff;
@@ -24,6 +28,8 @@
   --verde-01: #00A14A;
   --rojo-01: #C02116;
   --rojo-02: #c01649;
+  --cafe-01: #3d280c;
+  --cafe-02: #140d04;
   --Glass: rgba(255, 255, 255, 0.3);
 }
 
@@ -196,6 +202,22 @@ button {
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
   background-position: 25% 20%;
   background-attachment: scroll;
+}
+
+.header-contacto {
+  background: url("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 20%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*============== START ==============*/
@@ -667,5 +689,31 @@ article h2 {
   color: var(--Azul-02);
 }
 
-/**/
+.up {
+  width: 70px;
+  height: 70px;
+  float: right;
+  padding: 8px;
+  background-color: var(--Azul-02);
+  border-radius: 50%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 25px;
+}
+
+.up a {
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+}
 /*# sourceMappingURL=blogs-styles.css.map */

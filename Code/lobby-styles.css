@@ -313,6 +313,22 @@ h4 {
   background-attachment: scroll;
 }
 
+.header-contacto {
+  background: url("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 20%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* ======= LOBBY STYLES ======== */
 .header-center {
   margin: 8% 0 2% 0;
@@ -1204,6 +1220,22 @@ button {
   background-attachment: scroll;
 }
 
+.header-contacto {
+  background: url("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 20%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /*============== START ==============*/
 .header-center {
   margin: 8% 0 2% 0;
@@ -1671,111 +1703,6 @@ article h2 {
 
 .night p b, .night h2 b {
   color: var(--Azul-02);
-}
-
-/**/
-/*====== FORMULARIO =====*/
-.contact-form {
-  --form-ok-color: #4caf50;
-  --form-error-color: #f44336;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
-
-.contact-form > * {
-  padding: 0.5rem;
-  margin: 1rem auto;
-  display: block;
-  width: 100%;
-}
-
-.contact-form textarea {
-  resize: none;
-}
-
-.contact-form legend,
-.contact-form-response {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-  font-size: 1rem;
-  font-family: sans-serif;
-}
-
-.contact-form input[type="submit"] {
-  width: 50%;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.contact-form *::-webkit-input-placeholder {
-  color: #000;
-}
-
-.contact-form *:-ms-input-placeholder {
-  color: #000;
-}
-
-.contact-form *::-ms-input-placeholder {
-  color: #000;
-}
-
-.contact-form *::placeholder {
-  color: #000;
-}
-
-.contact-form [required]:valid {
-  border: thin solid var(--form-ok-color);
-}
-
-.contact-form [required]:invalid {
-  border: thin solid var(--form-error-color);
-}
-
-.contact-form-error {
-  margin-top: -1rem;
-  font-size: 80%;
-  background-color: var(--form-error-color);
-  color: #fff;
-  -webkit-transition: all 800ms ease;
-  transition: all 800ms ease;
-}
-
-.contact-form-error.is-active {
-  display: block;
-  -webkit-animation: show-message 1s 1 normal 0s ease-out both;
-          animation: show-message 1s 1 normal 0s ease-out both;
-}
-
-.none {
-  display: none;
-}
-
-@-webkit-keyframes show-message {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-@keyframes show-message {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
 }
 
 /**/

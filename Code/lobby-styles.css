@@ -300,7 +300,21 @@ h4 {
 }
 
 .header-blog-Páginas_Web {
-  background: url("../Imgs/stillness-inmotion-Gq3i2dnLGik-unsplash.jpg");
+  background: url("https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvZnJpZWRyaWNoX2hpc3RvcmlhLWFydGUuanBnIiwicmVzaXplLDIwMDAsMjAwMCJdfQ.qySq18aLqgpFlwITFjZZAIO2jQYrqNlnLVOkAkqmTTg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 50%;
+  background-attachment: scroll;
+}
+
+.header-contacto {
+  background: url("https://images.unsplash.com/photo-1608610026254-da1c4f08ce9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1631&q=80");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -311,10 +325,12 @@ h4 {
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
   background-position: 25% 20%;
   background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.header-contacto {
-  background: url("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+.header-FLStudio {
+  background: url("https://ohquecool.com/wp-content/uploads/2020/04/viale-2-960x641@2x.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -323,7 +339,121 @@ h4 {
   height: 100vh;
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
-  background-position: 25% 20%;
+  background-position: 0  60%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-Filmora {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Velazquez-las_hilanderas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 0;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-fuenteDePoder {
+  background: url("./blog-imgs/Batalla de lapitas y centauros.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-size: 110%;
+  background-position: 25% 55%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-procesador {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/a/ae/Vel%C3%A1zquez_-_La_Fragua_de_Vulcano_%28Museo_del_Prado%2C_1630%29.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 30%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-grafica {
+  background: url("https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvZ295YS1lbC1hcXVlbGFycmUtbXVzZW8tbGEtemFyby1nYWxkaWFuby1tYWRyaWQtMTc5Ny05OC5qcGciLCJyZXNpemUsODAwIl19.D2UavhqoZN7fKfwMtf8kgM/ouNFlCYfekREl1NkiwN-E.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 0 55%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-almacenamiento {
+  background: url("https://arthistoryproject.com/site/assets/files/11712/alexandre_cabanel-fallen_angel-1847-obelisk-art-history-1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 45%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-ram {
+  background: url("./blog-imgs/El rapto de Proserpina (1).jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-size: 110%;
+  background-position: 25% 45%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-motherboard {
+  background: url("./blog-imgs/La Aparición de la Virgen a San Francisco.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 0 10%;
   background-attachment: scroll;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1207,7 +1337,21 @@ button {
 }
 
 .header-blog-Páginas_Web {
-  background: url("../Imgs/stillness-inmotion-Gq3i2dnLGik-unsplash.jpg");
+  background: url("https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvZnJpZWRyaWNoX2hpc3RvcmlhLWFydGUuanBnIiwicmVzaXplLDIwMDAsMjAwMCJdfQ.qySq18aLqgpFlwITFjZZAIO2jQYrqNlnLVOkAkqmTTg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 50%;
+  background-attachment: scroll;
+}
+
+.header-contacto {
+  background: url("https://images.unsplash.com/photo-1608610026254-da1c4f08ce9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1631&q=80");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -1218,10 +1362,12 @@ button {
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
   background-position: 25% 20%;
   background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.header-contacto {
-  background: url("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+.header-FLStudio {
+  background: url("https://ohquecool.com/wp-content/uploads/2020/04/viale-2-960x641@2x.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -1230,7 +1376,121 @@ button {
   height: 100vh;
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
-  background-position: 25% 20%;
+  background-position: 0  60%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-Filmora {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Velazquez-las_hilanderas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 0;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-fuenteDePoder {
+  background: url("./blog-imgs/Batalla de lapitas y centauros.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-size: 110%;
+  background-position: 25% 55%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-procesador {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/a/ae/Vel%C3%A1zquez_-_La_Fragua_de_Vulcano_%28Museo_del_Prado%2C_1630%29.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 30%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-grafica {
+  background: url("https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvZ295YS1lbC1hcXVlbGFycmUtbXVzZW8tbGEtemFyby1nYWxkaWFuby1tYWRyaWQtMTc5Ny05OC5qcGciLCJyZXNpemUsODAwIl19.D2UavhqoZN7fKfwMtf8kgM/ouNFlCYfekREl1NkiwN-E.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 0 55%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-almacenamiento {
+  background: url("https://arthistoryproject.com/site/assets/files/11712/alexandre_cabanel-fallen_angel-1847-obelisk-art-history-1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 25% 45%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-ram {
+  background: url("./blog-imgs/El rapto de Proserpina (1).jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-size: 110%;
+  background-position: 25% 45%;
+  background-attachment: scroll;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-motherboard {
+  background: url("./blog-imgs/La Aparición de la Virgen a San Francisco.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: var(--Blanco);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+  background-position: 0 10%;
   background-attachment: scroll;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1705,5 +1965,31 @@ article h2 {
   color: var(--Azul-02);
 }
 
-/**/
+.up {
+  width: 70px;
+  height: 70px;
+  float: right;
+  padding: 8px;
+  background-color: var(--Azul-02);
+  border-radius: 50%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 25px;
+}
+
+.up a {
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+}
 /*# sourceMappingURL=lobby-styles.css.map */

@@ -108,14 +108,65 @@
     background-attachment: scroll;
 }
 .header-blog-Páginas_Web{
-    @include header-lobbys("../Imgs/stillness-inmotion-Gq3i2dnLGik-unsplash.jpg");
-    background-position: 25% 20%;
+    @include header-lobbys("https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvZnJpZWRyaWNoX2hpc3RvcmlhLWFydGUuanBnIiwicmVzaXplLDIwMDAsMjAwMCJdfQ.qySq18aLqgpFlwITFjZZAIO2jQYrqNlnLVOkAkqmTTg.jpg");
+    background-position: 25% 50%;
     background-attachment: scroll;
 }
 
 .header-contacto{
-    @include header-lobbys("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+    @include header-lobbys("https://images.unsplash.com/photo-1608610026254-da1c4f08ce9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1631&q=80");
     background-position: 25% 20%;
+    background-attachment: scroll;
+    box-shadow: none;
+}
+.header-FLStudio{
+    @include header-lobbys("https://ohquecool.com/wp-content/uploads/2020/04/viale-2-960x641@2x.jpg");
+    background-position: 0  60%;
+    background-attachment: scroll;
+    box-shadow: none;
+}
+
+.header-Filmora{
+    @include header-lobbys("https://upload.wikimedia.org/wikipedia/commons/a/a3/Velazquez-las_hilanderas.jpg");
+    background-position: 25% 0;
+    background-attachment: scroll;
+    box-shadow: none;
+}
+.header-fuenteDePoder{
+    @include header-lobbys("./blog-imgs/Batalla de lapitas y centauros.jpg");
+    background-size: 110%;
+    background-position: 25% 55%;
+    background-attachment: scroll;
+    box-shadow: none;
+}
+.header-procesador{
+    @include header-lobbys("https://upload.wikimedia.org/wikipedia/commons/a/ae/Vel%C3%A1zquez_-_La_Fragua_de_Vulcano_%28Museo_del_Prado%2C_1630%29.jpg");
+    background-position: 25% 30%;
+    background-attachment: scroll;
+    box-shadow: none;
+}
+.header-grafica{
+    @include header-lobbys("https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvZ295YS1lbC1hcXVlbGFycmUtbXVzZW8tbGEtemFyby1nYWxkaWFuby1tYWRyaWQtMTc5Ny05OC5qcGciLCJyZXNpemUsODAwIl19.D2UavhqoZN7fKfwMtf8kgM/ouNFlCYfekREl1NkiwN-E.jpg");
+    background-position: 0 55%;
+    background-attachment: scroll;
+    box-shadow: none;
+}
+.header-almacenamiento{
+    @include header-lobbys("https://arthistoryproject.com/site/assets/files/11712/alexandre_cabanel-fallen_angel-1847-obelisk-art-history-1.png");
+    background-position: 25% 45%;
+    background-attachment: scroll;
+    box-shadow: none;
+}
+.header-ram{
+    @include header-lobbys("./blog-imgs/El rapto de Proserpina (1).jpg");
+    background-size: 110%;
+    background-position: 25% 45%;
+    background-attachment: scroll;
+    box-shadow: none;
+}
+.header-motherboard{
+    @include header-lobbys("./blog-imgs/La Aparición de la Virgen a San Francisco.jpg");
+    background-position: 0 10%;
     background-attachment: scroll;
     box-shadow: none;
 }

@@ -21,20 +21,25 @@
     padding: 15px 0;
 
     .footer-logo{
+        justify-self: flex-start;
+
+    a{
         width: 100%;
         display: flex;
-        grid-area: logo;
+        text-decoration: none;
         align-items: center;
-
+        grid-area: logo;
         img{
             width: 75px;
         }
 
         p{  
-            margin-left: 3%;
+            margin-left: 15px;
             color: var(--Blanco);
             font-size: 30px;
         }
+    }
+       
     }
     .footer-copy{
         color: var(--Blanco);

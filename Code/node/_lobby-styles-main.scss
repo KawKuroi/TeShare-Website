@@ -173,13 +173,15 @@
             position: relative;
             z-index: 1000;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
-           
+            padding-bottom: 10%;
 
             &:hover{
                 transform: scale(1.05);
                 opacity: 1;
             }
-
+            p{
+              
+            }
             a{
                 text-decoration: none;
                 color: #000;

@@ -355,6 +355,9 @@
 /*================== SECTION-04 ==================*/
 
 .section-04{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
 
     .section-title{
 
@@ -368,30 +371,25 @@
     }
 
     .section-content{
-
-        margin: 0 10%;
-        margin-top: 5%;        
+        width: 80%;
+        margin: 3% auto;        
         display: grid;
         justify-items: center;
         align-items: center;
         grid-template-areas: "articles img";
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
 
-        .body-articles{
-
-            display: grid;
-            grid-template-columns: 1;            
-            row-gap: 7%;
-            grid-area: articles;
+        .body-articles-04{
 
             .section-content-articles{
                 display: flex;
 
                 .articles-img{
-                    grid-area: img;
-                    img{
-                    
-                    margin-top: 8%;    width: 40px;
+                    padding-top: 2%;
+
+                    .bookmark-black{
+                        width: 39px;
+                        
                     }
                 }
 
@@ -405,6 +403,7 @@
             }
         }
     }
+
     .section-content-img{
         img{
             width:100%;
@@ -418,12 +417,13 @@
 .section-04{
 
     .section-foot{
+        height: 100%;
         display: flex;
         align-content: center;
         justify-content: center;
 
         button{
-            margin-top: 5%;
+            
             padding: 20px 30px;
             border-radius: 30px;
             background: var(--Azul-01);

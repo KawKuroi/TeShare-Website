@@ -83,3 +83,401 @@ h3{font-weight: 400;
         line-height: 30px;
     }
 }
+
+
+/*============ MQ NAV ============*/
+.header-center{    
+    h3{
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+}
+
+#menu-iconRD{
+    display: none;
+}
+
+.header-main{
+
+    @include mq("phone"){
+        height: 100vh;
+        width: 100vw;
+        background-size: 200vh;
+        /*EL FONDO CAMBIA SEGUN CADA NAVEGADOR, CAMBIAR A 55% EL PRIMER VALOR EN CASO DE FIREFOX*/
+        background-position:75% 0;         
+    }
+}
+.chrome {
+
+    @include mq("phone"){
+        height: 100vh;
+        background-size: 200vh;
+        background-position:120% 0;
+        background-attachment: fixed;         
+    }
+}
+
+.header-top{
+    @include mq("phone"){
+        padding-top: 5%;
+        width: 85%;
+        margin: auto;
+        justify-content: space-between;
+        
+        .bars{
+            a{  
+
+                #menu-iconRD{
+                    display: inline-block;
+                }
+                #menu-icon{
+                    display: none;
+                }
+            }
+        }
+        .icons{
+                display: none;
+        }
+        
+        .Logo{
+            margin: auto;
+            padding-left: 36px;  
+            a{
+                h3{
+                    display: none; 
+                }
+                #logo-icon-yellowS{
+                    width: 55px;
+                }
+                
+            }
+        }
+    } 
+}
+
+.header-center{
+    @include mq("phone"){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 5%;
+        height: 50%;
+
+        h1{
+            font-size: 70px;
+        }
+
+        h2{
+            align-self: flex-start;
+            font-size: 30px;
+            line-height: 120%;
+            margin-left: 4%;
+        }
+        h3{
+            font-size: 20px;
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+}
+.header-nav{
+    @include mq("phone"){
+        display: none;
+    }
+}
+
+.section-01{
+    @include mq("phone"){
+        flex-direction: column;
+        padding-bottom: 10%;
+
+        .section-img{
+            width: 70%;
+            height: 250px;
+            margin: auto;
+            padding-top: 16%;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .section-content{
+            margin: 0;
+            padding: 10%;
+
+            h2{
+                font-size: 39px;
+                display: flex;
+                flex-direction: column;
+                img{
+                    padding-top: 5%;
+                    width: 10%;
+                    margin: auto;
+                }
+            }
+            p{  
+                width: 90%;
+                margin: auto;
+                padding-top: 5%;
+                font-size: 28px;
+            }
+            button{
+                a{
+                    h6{
+                        font-size: 15px;
+                        img{
+                            width: 13px;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+.section-02{
+    @include mq("phone"){
+        padding-bottom: 6%;
+        .section-toppart{
+            padding-top: 10%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+            .section-title{
+                width: 90%;
+                margin: auto;
+                h2{
+                    font-size: 50px;
+                }
+            }
+
+            .section-content{
+                padding: 6% 0;
+
+                .phrase{
+                    width: 80%;
+                    margin: auto;
+                    margin-top: 5%;
+                    p{
+                        font-size: 20px;
+                    }
+                    
+                }
+            }
+        }
+
+        .section-foot{
+            width: 80%;
+            margin: auto;
+            padding-top: 8%;
+            h5{
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.section-03{
+    @include mq("phone"){
+        padding: 15% 0;
+        overflow: hidden;
+
+        .section-img-logo{
+            display: none;
+
+        }
+        .section-content{
+
+            h3{
+                font-size: 50px;
+            }
+            h6{
+                width: 90%;
+                margin: auto;
+                font-size: 26px;
+            }
+
+            button{
+                
+                a{
+                    h5{
+                        font-size: 20px;
+                        margin-right: 1%;
+                    }
+                    img{
+                        width: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.article-01{
+    @include mq("phone"){
+        padding-top: 6%;
+        display: grid;
+        margin: 0;
+        grid-template-rows: 50vh 60vh;
+        grid-template-columns: 100vw;
+        grid-template-areas: "img" "contenido";
+        gap: 2% 0;
+        padding-bottom: 6%;
+        
+        img{
+            grid-area: img;
+            width: 60%;
+            margin: auto;
+        }
+        .article-content{
+            grid-area: contenido;
+            margin: 0;
+            padding: 0;
+            h3{
+                overflow-y: hidden;
+                padding-top: 5%;
+                text-align: center;
+                font-size: 30px;
+            }
+            p{
+                width: 85%;
+                margin: auto;
+                padding: 0;
+                text-align: center;
+                font-size: 20px;
+            }
+            button{
+                margin: auto;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+ 
+}
+
+.section-04{
+    @include mq("phone"){
+
+        padding-top: 7%;
+        padding-bottom: 7%;
+
+        .section-title{
+            width: 90%;
+            margin: auto;
+
+            h3{
+                font-size: 30px;
+            }
+        }
+        .section-content{
+            grid-template-columns: 100%;
+
+            .body-articles-04{
+                .section-content-img{
+                   img{
+                    padding: 5% 0;
+                   }
+                }
+                .section-content-articles{
+                    padding: 5% 0;
+                    .articles-img{
+                        margin-top: 5%;
+                        .bookmark-black{
+                           
+                            width: 18px;
+                        }
+                    }
+                    
+                    .articles-content{
+                        padding-top: 5%;
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                            a{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.about_us{
+
+    @include mq("phone"){
+
+    padding-bottom: 7%;
+    .about_us-title{
+        h2{
+            font-size: 36px;
+        }
+    }
+    .about_us-content{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+
+        .about_us-content-img{
+            width: 90%;
+            margin: auto;
+            img{
+                width: 100%;
+            }
+        }
+        .about_us-content-text{
+            padding-top: 8%;
+            width: 80%;
+            margin: auto;
+            p{
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+}
+}
+
+.footer-box{
+    @include mq("phone"){
+        padding: 10%;
+        width: 100vw;
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .footer-logo{
+                width:60%;
+                margin: auto;
+               a{
+                   img{
+                        width: 45px;
+                   }
+               }
+            }
+            .footer-copy{
+                padding: 6% 0;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+}

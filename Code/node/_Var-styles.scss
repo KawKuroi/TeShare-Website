@@ -8,6 +8,7 @@
     font-size: 16px;
     transition: all .5s;
     scroll-behavior: smooth;
+    
     &::first-letter{
         text-transform: uppercase;
     }
@@ -21,6 +22,7 @@
     --Gris-02: #1c3135;
     --Azul-01: #00A19D;
     --Azul-02: #01706e;
+    --Azul-02-s: #07a5a293;
     --Amarillo-01: #FFB344;
     --Amarillo-02: #f19f24;
     --verde-01: #00A14A;
